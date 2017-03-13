@@ -87,6 +87,7 @@ def add_git_segment(powerline):
         fg = Color.REPO_DIRTY_FG
 
 #    powerline.append(' %s ' % branch, fg, bg)
-    branch_mod = u"\u2387  {} ".format(branch)
-    powerline.append(branch_mod, fg, bg)
+    powerline.append(' ' + u'\ue0a0' + ' %s ' % branch, fg, bg)
+#    branch_mod = u"\u2387  {} ".format(branch)
+#    powerline.append(branch_mod, fg, bg)
     stats.add_to_powerline(powerline, Color)
