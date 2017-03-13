@@ -44,6 +44,9 @@ SEGMENTS = [
 
 # Show number of running jobs
     'jobs',
+#
+# Show the version of ruby reported by rbenv
+    'rbenv',
 
 # Show the last command's exit code if it was non-zero
 #    'exit_code',
