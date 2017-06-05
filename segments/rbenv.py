@@ -8,6 +8,9 @@ def add_rbenv_segment(powerline):
         if len(version) <= 0:
             return
 
-        powerline.append(' %s ' % version, Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
+        if version == "system":
+            powerline.append(' s ', Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
+        else:
+            powerline.append(' %s ' % version, Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
     except OSError:
         return
