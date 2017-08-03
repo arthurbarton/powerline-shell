@@ -12,5 +12,11 @@ def add_rbenv_segment(powerline):
             powerline.append(' s ', Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
         else:
             powerline.append(' %s ' % version, Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
+        p1 = subprocess.Popen(["rbenv", "local"], stdout=subprocess.PIPE)
+        version = p1.communicate()[0].decode("utf-8").rstrip()
+        if len(version) <= 0:
+        	return
+
+        powerline.append(' %s ' % version, Color.VIRTUAL_ENV_FG, Color.VIRTUAL_ENV_BG)
     except OSError:
         return
