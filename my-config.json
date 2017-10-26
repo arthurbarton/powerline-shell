@@ -1,0 +1,17 @@
+{
+  "segments": [
+    "set_term_title",
+    "username",
+    "hostname",
+    "rbenv",
+    "ssh",
+    "cwd",
+    "git",
+    "hg",
+    "jobs",
+    "read_only",
+    "root",
+    "exit_code"
+  ],
+  "theme": "solarized_dark"
+}
