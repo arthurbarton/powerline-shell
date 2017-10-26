@@ -1,5 +1,70 @@
 # Changes
 
+2017-10-16 (version 0.4.2)
+
+* VCS segments will use ASCII `?` instead of a unicode symbol for new files.
+
+2017-10-16 (version 0.4.1)
+
+* Fix cwd bug when `$HOME` ends in a slash
+  ([@tbodt](https://github.com/banga/powerline-shell/pull/309))
+* Use docker to run tests
+  ([@aa8y](https://github.com/banga/powerline-shell/pull/297))
+
+2017-10-06 (version 0.4.0)
+
+* tcsh support
+
+2017-09-30 (version 0.3.1)
+
+* Fix username segment's background color after "su" command
+  ([@Fak3](https://github.com/banga/powerline-shell/pull/175))
+* New `battery` segment which shows the percentage your battery is charged and
+  an icon when your battery is charging.
+  ([@wattengard](https://github.com/banga/powerline-shell/pull/204))
+* New `aws_profile` segment which shows which AWS profile you are using.
+  ([@bryangrimes](https://github.com/banga/powerline-shell/pull/223))
+
+2017-09-30 (version 0.3.0)
+
+* Redo Fossil segment to be consistent with git, svn, etc.
+  ([@emansije](https://github.com/banga/powerline-shell/pull/286))
+* Fix subshell execution in bash described by
+  [pw3nage](https://github.com/njhartwell/pw3nage)
+  ([@b-ryan](https://github.com/banga/powerline-shell/pull/282))
+* Change SSH segment to just use the text `SSH` instead of showing a lock
+  symbol. Closes [#287](https://github.com/banga/powerline-shell/issues/287).
+
+2017-09-18 (version 0.2.2)
+
+* Fix python3 issue in uptime segment. Fixes
+  [#291](https://github.com/banga/powerline-shell/issues/291).
+
+2017-09-16 (version 0.2.1)
+
+* Fix issues preventing fish shell from rendering.
+
+2017-09-13 (version 0.2.0)
+
+* Add Bazaar segment
+  ([@emansije](https://github.com/banga/powerline-shell/pull/283))
+  * And rename properties of RepoStats for clarity
+    ([@emansije](https://github.com/banga/powerline-shell/pull/284))
+* Rewrite SVN segment to be consistent with git
+* Remove duplicate function in colortrans.py
+  ([@jmtd](https://github.com/banga/powerline-shell/pull/273))
+* Make python 3 check compatible with older Python versions
+* New theme! `solarized_light`
+  ([@ruturajv](https://github.com/banga/powerline-shell/pull/143)
+
+2017-09-10
+
+* Complete overhaul of the project
+  ([@b-ryan](https://github.com/banga/powerline-shell/pull/280))
+  * There is now a PyPi package
+  * It's significantly faster now
+  * Configuration and installation is brand new. See README.md
+
 2017-06-21
 
 * Add `rbenv` segment
