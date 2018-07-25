@@ -9,12 +9,11 @@ class Segment(BasicSegment):
             p1 = subprocess.Popen(["rbenv", "version-name"], stdout=subprocess.PIPE)
             version = p1.communicate()[0].decode("utf-8").rstrip()
             if len(version) <= 0:
-                    return
+                return
             elif version == "system":
-                    return
-            else:
-                powerline.append(' %s ' % version,
-                        powerline.theme.VIRTUAL_ENV_FG,
-                        powerline.theme.VIRTUAL_ENV_BG)
+                return
+            powerline.append(' %s ' % version,
+                             powerline.theme.VIRTUAL_ENV_FG,
+                             powerline.theme.VIRTUAL_ENV_BG)
         except OSError:
             return
